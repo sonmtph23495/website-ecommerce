@@ -1,0 +1,33 @@
+// Importing all the scss files here
+
+// abstracts
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+
+// base
+@import "base/reset";
+@import "base/typography";
+@import "base/global";
+
+// vendors;
+@import "vendors/bootstrap";
+@import "vendors/normalize";
+
+// components
+@import "components/button";
+@import "components/card";
+
+// layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/sidebar";
+
+// pages
+@import "pages/home";
+@import "themes/dark";
+@import "vendors/bootstrap";
+
+// themes
+@import "themes/dark";
