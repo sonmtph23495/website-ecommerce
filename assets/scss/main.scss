@@ -1,33 +1,45 @@
-// Importing all the scss files here
-
-// abstracts
-@import "abstracts/variables";
+// 1. Abstracts - Chứa các biến, mixins và functions
 @import "abstracts/functions";
 @import "abstracts/mixins";
+@import "abstracts/variables";
 
-// base
-@import "base/reset";
-@import "base/typography";
-@import "base/global";
-
-// vendors;
-@import "vendors/bootstrap";
+// 2. Vendors - Các thư viện bên ngoài
 @import "vendors/normalize";
-
-// components
-@import "components/button";
-@import "components/card";
-
-// layout
-@import "layout/header";
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/sidebar";
-
-// pages
-@import "pages/home";
-@import "themes/dark";
 @import "vendors/bootstrap";
 
-// themes
+// 3. Base - Các quy tắc CSS cơ bản
+@import "base/reset";
+@import "base/global";
+@import "base/typography";
+
+// 4. Layout - Định nghĩa bố cục chung
+@import "layout/grid";
+@import "layout/header";
+@import "layout/sidebar";
+@import "layout/footer";
+
+// 5. Components - Các thành phần tái sử dụng
+@import "components/breadcrumbs";
+@import "components/breadcrumbsMini";
+@import "components/button";
+@import "components/category";
+@import "components/collections";
+@import "components/decor";
+@import "components/filterProduct";
+@import "components/hero";
+@import "components/modal";
+@import "components/paginate";
+@import "components/productList";
+@import "components/services";
+
+// 6. Pages - SCSS riêng cho từng trang
+@import "pages/about";
+@import "pages/cart";
+@import "pages/comparison";
+@import "pages/contact";
+@import "pages/home";
+@import "pages/order";
+@import "pages/productDetail";
+
+// 7. Themes - Chủ đề giao diện
 @import "themes/dark";
