@@ -140,6 +140,10 @@ table {
           box-sizing: border-box;
 }
 
+:root {
+  --mainBackgroudColor: #fff;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -185,11 +189,82 @@ h6 {
   font-weight: 800;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
-  text-align: center;
+.btn {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#headerComponent {
+  background: #fff;
+  padding: 0 3.25rem;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-style: normal;
+  line-height: normal;
+}
+
+#logoComponent {
+  cursor: pointer;
+}
+#logoComponent img {
+  width: 50px;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+#logoComponent span {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-weight: 700;
+}
+
+#navigationComponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4.688rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#navigationComponent a, #navigationComponent span {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header-nav-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.75rem;
+}
+.header-nav-actions img {
+  width: 28px;
+  height: 28px;
 }
 
 footer {

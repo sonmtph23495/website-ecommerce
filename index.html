@@ -1,19 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>CODEFARM - 7-1 Pattern</title>
-		<!-- font -->
 
-		<!-- icons -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Funiro</title>
+	<!-- font -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
 
-		<!-- bootstrap -->
 
-		<!-- css -->
-		<link rel="stylesheet" href="./assets/css/main.css" />
-	</head>
-	<body>
-		<header>header done</header>
-	</body>
+	<!-- icons -->
+
+	<!-- bootstrap 5 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+		integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<!-- tailwind -->
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+	<!-- header common -->
+	<header id="headerComponent" class="flex w-full justify-content-between items-center gap-1">
+
+		<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
+			<img src="assets/images/logo.png" alt="Logo">
+			<span>Furniro</span>
+		</a>
+
+		<nav id="navigationComponent" class="flex w-fit justify-center items-center">
+			<a href="/" class="btn capitalize">home</a>
+			<a href="/shop.html" class="btn capitalize">shop</a>
+			<a href="/about.html" class="btn capitalize">about</a>
+			<a href="/contact.html" class="btn capitalize">contact</a>
+		</nav>
+
+		<div class="header-nav-actions">
+			<a href="/account.html">
+				<img src="assets/icons/mdi_account-alert-outline.svg" class="btn">
+			</a>
+			<span>
+				<img src="assets/icons/akar-icons_search.svg" class="btn">
+			</span>
+			<a href="">
+				<img src="assets/icons/akar-icons_heart.svg" class="btn">
+			</a>
+			<a href="/cart.html">
+				<img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn">
+			</a>
+		</div>
+	</header>
+
+
+
+
+</body>
+
 </html>

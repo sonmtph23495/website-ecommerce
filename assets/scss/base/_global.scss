@@ -3,7 +3,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-
+:root {
+	--mainBackgroudColor: #fff;
+}
 html {
 	font-size: 62.5%;
 	// font-family: 'Roboto', sans-serif;
@@ -54,4 +56,15 @@ h4,
 h5,
 h6 {
 	font-weight: 800;
+}
+
+.btn {
+	transition: all 0.3s ease;
+	user-select: none;
+	word-break: break-all;
+	white-space: nowrap;
+}
+.btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
 }
