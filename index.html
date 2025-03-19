@@ -26,42 +26,80 @@
 
 <body>
 
-
-	<header id="headerComponent" class="flex w-full justify-content-between items-center gap-1">
-
-		<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
-			<img src="assets/images/logo.png" alt="Logo">
-			<span>Furniro</span>
-		</a>
-
-		<nav id="navigationComponent" class="flex w-fit justify-center items-center">
-			<a href="/" class="btn capitalize">home</a>
-			<a href="/shop.html" class="btn capitalize">shop</a>
-			<a href="/about.html" class="btn capitalize">about</a>
-			<a href="/contact.html" class="btn capitalize">contact</a>
-		</nav>
-
-		<div class="header-nav-actions">
-			<a href="/account.html">
-				<img src="assets/icons/mdi_account-alert-outline.svg" class="btn">
+	<header>
+		<div id="headerWebComponent">
+			<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
+				<img src="assets/images/logo.png" alt="Logo">
+				<span>Furniro</span>
 			</a>
-			<span>
-				<img src="assets/icons/akar-icons_search.svg" class="btn">
-			</span>
-			<a href="">
-				<img src="assets/icons/akar-icons_heart.svg" class="btn">
-			</a>
-			<a href="/cart.html">
-				<img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn">
-			</a>
+			<nav id="navigationComponent">
+				<a href="/" class="btn capitalize">home</a>
+				<a href="/shop.html" class="btn capitalize">shop</a>
+				<a href="/about.html" class="btn capitalize">about</a>
+				<a href="/contact.html" class="btn capitalize">contact</a>
+			</nav>
+			<div class="header-nav-actions">
+				<a href="/account.html">
+					<img src="assets/icons/mdi_account-alert-outline.svg" class="btn">
+				</a>
+				<span>
+					<img src="assets/icons/akar-icons_search.svg" class="btn">
+				</span>
+				<a href="">
+					<img src="assets/icons/akar-icons_heart.svg" class="btn">
+				</a>
+				<a href="/cart.html">
+					<img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn">
+				</a>
+			</div>
 		</div>
+
+
+		<div id="headerMobileComponent">
+			<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
+				<img src="assets/images/logo.png" alt="Logo">
+				<span>Furniro</span>
+			</a>
+			<button class="btn d-md-none" id="menuToggle">
+				<img src="assets/icons/hamburger-menu.png" width="18" alt="Menu">
+
+			</button>
+
+			<nav id="mobileNavigationComponent">
+				<div class="mobile-nav-content">
+					<a href="/" class="btn capitalize">home</a>
+					<a href="/shop.html" class="btn capitalize">shop</a>
+					<a href="/about.html" class="btn capitalize">about</a>
+					<a href="/contact.html" class="btn capitalize">contact</a>
+				</div>
+			</nav>
+
+			<!-- <div class="header-nav-actions">
+				<a href="/account.html">
+					<img src="assets/icons/mdi_account-alert-outline.svg" class="btn">
+				</a>
+				<span>
+					<img src="assets/icons/akar-icons_search.svg" class="btn">
+				</span>
+				<a href="">
+					<img src="assets/icons/akar-icons_heart.svg" class="btn">
+				</a>
+				<a href="/cart.html">
+					<img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn">
+				</a>
+			</div> -->
+
+		</div>
+
+
+
 	</header>
 
 	<section id="homePage">
 		<div id="homeBanner">
 			<img src="./assets/images/scandinavian-interior-mockup-wall-decal-background 1.png" alt="">
 
-			<div class="quick-infor">
+			<div class="quick-infor d-none">
 				<span class="status">New Arrival</span>
 				<span class="title">Discover Our New Collection</span>
 				<div class="description">
@@ -94,6 +132,8 @@
 			</div>
 		</div>
 	</section>
+
+
 
 </body>
 

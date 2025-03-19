@@ -6,15 +6,22 @@
 // 	text-align: center;
 // }
 
-#headerComponent {
+#headerWebComponent {
+	// border: 1px solid red;
 	background: #fff;
 	padding: 0 3.25rem;
 	min-height: 100px;
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	gap: 0.5rem;
+
+	font-family: "Poppins";
 	font-style: normal;
 	line-height: normal;
 
+	position: relative;
 }
 
 #logoComponent {
@@ -37,8 +44,12 @@
 
 #navigationComponent {
 	display: flex;
+	width: fit-content;
+	justify-content: center;
+	align-items: center;
 	gap: 4.688rem;
 	align-items: center;
+
 
 	& a,
 	span {
@@ -52,7 +63,6 @@
 
 .header-nav-actions {
 	display: flex;
-	gap: 1rem;
 	align-items: center;
 	gap: 2.75rem;
 
@@ -63,3 +73,113 @@
 		padding: 0;
 	}
 }
+
+#menuToggle {
+	border-radius: 50%;
+	padding: 0 1rem;
+	position: relative;
+}
+
+#mobileNavigationComponent {
+	display: none !important; //
+	// border: 1px solid blue !important;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+
+	width: 60%;
+	height: fit-content;
+	display: flex;
+	flex-direction: row-reverse;
+	position: fixed;
+	right: 0;
+	height: 100%;
+	background-color: var(--mainBackgroudColor);
+	z-index: 2;
+
+}
+
+.mobile-nav-content {
+	width: 100%;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.25rem;
+
+	& a {
+		padding: 4% 1rem;
+
+		&:hover {
+			background-color: var(--discoveryBackgroudColor);
+		}
+	}
+}
+
+#menuToggle:hover #mobileNavigationComponent {
+	display: flex !important; //
+}
+
+#headerMobileComponent {
+	// border: 1px solid red;
+	display: none;
+	min-height: 100px;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.5rem;
+	position: relative;
+}
+
+#headerMobileComponent #logoComponent {
+
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translate(-50%, -50%);
+	top: 50%;
+}
+
+
+
+@media (max-width: 576px) {
+	#mobileNavigationComponent {
+		width: 90%;
+	}
+}
+
+@media (max-width: 768px) {
+	#headerWebComponent {
+		display: none;
+	}
+
+	#headerMobileComponent {
+		display: flex;
+		width: 100%;
+	}
+
+	// #headerMobileComponent.header-nav-actions {
+	// 	border: 1px solid blue !important;
+	// 	position: fixed !important;
+	// 	display: flex !important;
+	// 	bottom: 0;
+	// 	left: 0;
+	// 	width: 100%;
+	// 	justify-content: space-around;
+	// 	padding: 1.75rem 0;
+	// 	background: #fff;
+	// 	margin: 0;
+	// 	z-index: 1;
+	// 	transform: none;
+	// }
+
+}
+
+@media (max-width: 992px) {
+	#headerWebComponent #navigationComponent {
+		gap: 1.5rem;
+	}
+}
+
+@media (max-width: 1200px) {}
+
+@media (max-width: 1400px) {}
