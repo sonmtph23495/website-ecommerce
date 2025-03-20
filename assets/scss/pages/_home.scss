@@ -219,7 +219,8 @@
     #homeBanner .quick-infor {
         width: 100%;
         background: var(--discoveryBackgroudColor);
-        max-width: 643px;`m 2.25rem 2.5rem;
+        max-width: 643px;
+        padding: 3.75rem 2.5rem 2.25rem 2.5rem;
         position: static !important;
         z-index: 2;
         -webkit-transform: translate(0);
