@@ -152,6 +152,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  padding-bottom: 64px;
 }
 
 button {
@@ -290,7 +291,7 @@ h6 {
 
 #menuToggle {
   border-radius: 50%;
-  padding: 0 1rem;
+  padding: 1rem;
   position: relative;
 }
 
@@ -298,10 +299,10 @@ h6 {
   display: none !important;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
-  width: 60%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  background-color: var(--mainBackgroudColor);
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -309,11 +310,11 @@ h6 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  position: fixed;
-  right: 0;
-  height: 100%;
-  background-color: var(--mainBackgroudColor);
-  z-index: 2;
+  position: absolute;
+  z-index: 4;
+  top: 100%;
+  right: 1%;
+  z-index: 20;
 }
 
 .mobile-nav-content {
@@ -328,10 +329,10 @@ h6 {
           flex-direction: column;
   display: flex;
   flex-direction: column;
-  padding: 0 0.25rem;
+  padding: 0.25rem;
 }
 .mobile-nav-content a {
-  padding: 4% 1rem;
+  padding: 4% 4rem;
 }
 .mobile-nav-content a:hover {
   background-color: var(--discoveryBackgroudColor);
@@ -358,6 +359,7 @@ h6 {
           align-items: center;
   padding: 0 0.5rem;
   position: relative;
+  z-index: 4;
 }
 
 #headerMobileComponent #logoComponent {
@@ -370,7 +372,7 @@ h6 {
 
 @media (max-width: 576px) {
   #mobileNavigationComponent {
-    width: 90%;
+    width: 94vw;
   }
 }
 @media (max-width: 768px) {
@@ -382,6 +384,21 @@ h6 {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
+  }
+  #headerMobileComponent .header-nav-actions {
+    position: fixed !important;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 1.75rem 0;
+    background: #fff;
+    margin: 0;
+    z-index: 1;
   }
 }
 @media (max-width: 992px) {
@@ -549,6 +566,7 @@ body {
 
 #homeBanner {
   position: relative;
+  z-index: 1;
 }
 
 #homeBanner .quick-infor {
@@ -558,6 +576,7 @@ body {
   width: 50%;
   padding: 3.75rem 2.5rem 2.25rem 2.5rem;
   position: absolute;
+  z-index: 2;
   top: 50%;
   right: 47%;
   -webkit-transform: translate(calc(100% - 3.75rem), -50%);
@@ -577,6 +596,10 @@ body {
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+#homeBanner img {
+  position: relative;
+  z-index: 1;
+}
 
 #homeBanner .status {
   color: var(--Font-Color, #333);
@@ -591,7 +614,6 @@ body {
   color: var(--Primary, #B88E2F);
   font-size: 52px;
   font-weight: 700;
-  line-height: 65px;
   /* 125% */
 }
 
@@ -713,8 +735,58 @@ body {
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 992px) {
+  #homeBanner .quick-infor {
+    max-width: 100%;
+    width: 80%;
+    padding: 1.75rem 2.5rem 2.25rem 2.5rem;
+    position: absolute;
+    z-index: 2;
+    top: 6%;
+    right: 10%;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@media (max-width: 768px) {
   #homeBanner .quick-infor {
     width: 80%;
+    padding: 3.75rem 2.5rem 2.25rem 2.5rem;
+    position: absolute;
+    z-index: 2;
+    top: 9%;
+    right: 15%;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  #buyNow {
+    padding: 25px 72px;
+    font-size: calc(16px - 4%);
+  }
+}
+@media (max-width: 576px) {
+  #homeBanner .quick-infor {
+    width: 100%;
+    background: var(--discoveryBackgroudColor);
+    max-width: 643px;
+    padding: 3.75rem 2.5rem 2.25rem 2.5rem;
+    position: static !important;
+    z-index: 2;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  #homeBanner .status {
+    font-size: calc(16px - 4%);
+  }
+  #homeBanner .title {
+    font-size: calc(52px - 4%);
+  }
+  #homeBanner .description {
+    font-size: calc(18px - 4%);
+  }
+  #buyNow {
+    padding: 25px 72px;
+    padding: calc(25px - 2%) calc(72px - 2%);
+    font-size: calc(16px - 8%);
   }
 }
