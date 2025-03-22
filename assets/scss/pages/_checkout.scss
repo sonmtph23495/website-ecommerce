@@ -1,0 +1,156 @@
+#checkOut {
+    margin-top: 6rem;
+    width: 100%;
+
+    color: var(--colorTextNomal);
+    font-family: "Poppins";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#billingDetails {
+    // border: 1px solid red !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2.25rem 4.5rem;
+
+}
+
+#billingDetails .title {
+    color: var(--colorTextNomal);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#billingDetails form {
+    // border: 1px solid red !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2.25rem;
+
+    & label {
+        color: var(--colorTextNomal);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    & input,
+    select {
+        height: 75px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        border: 1px solid #000000;
+        background: #FFF;
+        font-size: 1.5rem !important;
+
+        display: block;
+        width: 100%;
+        padding: 0.375rem 2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--bs-body-color);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--bs-body-bg);
+        background-clip: padding-box;
+        border: var(--bs-border-width) solid var(--bs-border-color);
+        border-radius: var(--bs-border-radius);
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+}
+
+#billingDetails .form-group {
+    gap: 1.375rem;
+}
+
+#inforsSummary {
+    padding: 2.25rem 5.5rem;
+
+}
+
+.infors-summary-wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.25rem;
+}
+
+#inforsSummary .product {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        color: var(--colorTextNomal);
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .name {
+        margin-top: 14px;
+        color: #9F9F9F;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .subtotal {
+        margin-top: 22px;
+        color: var(--colorTextNomal);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .total {
+        margin-top: 22px;
+        color: var(--colorTextNomal);
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+#inforsSummary .content {
+    // border: 1px solid red;
+    color: var(--colorTextNomal);
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
+    .title {
+        // border: 1px solid blue;
+        color: var(--colorTextNomal);
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .product-price {
+        margin-top: 14px;
+        color: var(--colorTextNomal);
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .product-subtotal {
+        margin-top: 22px;
+
+        color: var(--colorTextNomal);
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .last-price {
+        margin-top: 22px;
+        color: var(--Primary, #B88E2F);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+}

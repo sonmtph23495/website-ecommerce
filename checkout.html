@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEFARM - 7-1 Pattern</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- icons -->
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+
+
+    <header>
+		<div id="headerWebComponent">
+			<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
+				<img src="assets/images/logo.png" alt="Logo">
+				<span>Furniro</span>
+			</a>
+			<nav id="navigationComponent">
+				<a href="/" class="btn capitalize">home</a>
+				<a href="/shop.html" class="btn capitalize">shop</a>
+				<a href="/about.html" class="btn capitalize">about</a>
+				<a href="/contact.html" class="btn capitalize">contact</a>
+			</nav>
+			<div class="header-nav-actions">
+				<a href=""> <img src="assets/icons/mdi_account-alert-outline.svg" class="btn"> </a>
+				<span> <img src="assets/icons/akar-icons_search.svg" class="btn"> </span>
+				<a href=""> <img src="assets/icons/akar-icons_heart.svg" class="btn"> </a>
+				<a href="/cart.html"> <img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn"> </a>
+			</div>
+		</div>
+
+		<div id="headerMobileComponent">
+			<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
+				<img src="assets/images/logo.png" alt="Logo">
+				<span>Furniro</span>
+			</a>
+			<button class="btn d-md-none" id="menuToggle">
+				<img src="assets/icons/hamburger-menu.png" width="18" alt="Menu">
+
+				<nav id="mobileNavigationComponent">
+					<div class="mobile-nav-content">
+						<a href="/" class="btn capitalize">home</a>
+						<a href="/shop.html" class="btn capitalize">shop</a>
+						<a href="/about.html" class="btn capitalize">about</a>
+						<a href="/contact.html" class="btn capitalize">contact</a>
+					</div>
+				</nav>
+			</button>
+			<div class="header-nav-actions">
+				<a href=""> <img src="assets/icons/mdi_account-alert-outline.svg" class="btn"> </a>
+				<span> <img src="assets/icons/akar-icons_search.svg" class="btn"> </span>
+				<a href=""> <img src="assets/icons/akar-icons_heart.svg" class="btn"> </a>
+				<a href="/cart.html"> <img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn"> </a>
+			</div>
+
+		</div>
+	</header>
+    <section id="breadcrumb">
+        <img src="assets/images/breadcrumb-bg.png" alt="breadcrumb">
+        <div class="infors">
+            <img class="logo" src="assets/images/logo.png" alt="Logo">
+            <div class="title">Checkout</div>
+            <div class="detail">
+                <span>Home</span>
+                <span>Checkout</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="checkOut">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div id="billingDetails">
+                        <div class="title">Billing details</div>
+                        <form action="">
+                            <!-- 1 Name -->
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name</label>
+                                        <input id="firstName" type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ml-4">
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name</label>
+                                        <input id="lastName" type="text" class="form-control" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 Company Name (Optional) -->
+                            <div class="form-group">
+                                <label for="companyName">Company Name (Optional)</label>
+                                <input id="companyName" type="text" class="form-control" placeholder="">
+                            </div>
+                            <!-- 3 Country / Region -->
+                            <div class="form-group">
+                                <label for="countryRegion">Country / Region</label>
+                                <select id="countryRegion" class="form-control">
+                                    <option value="1">Sri Lanka</option>
+                                    <option value="2">USA</option>
+                                    <option value="3">Japan</option>
+                                </select>
+                            </div>
+                            <!-- 4 Street address -->
+                            <div class="form-group">
+                                <label for="streetAddress">Street address</label>
+                                <input id="streetAddress" type="text" class="form-control" placeholder="">
+                            </div>
+                            <!-- 5 Town / City -->
+                            <div class="form-group">
+                                <label for="townCity">Town / City</label>
+                                <input id="townCity" type="text" class="form-control" placeholder="">
+                            </div>
+                            <!-- 6 Province -->
+                            <div class="form-group">
+                                <label for="province">Province</label>
+                                <select id="province" class="form-control">
+                                    <option value="1">Western Province</option>
+                                    <option value="2">Central Province</option>
+                                    <option value="3">Southern Province</option>
+                                </select>
+                            </div>
+
+                            <!-- 7 ZIP code -->
+                            <div class="form-group">
+                                <label for="zipCode">ZIP code</label>
+                                <input id="zipCode" type="text" class="form-control" placeholder="">
+                            </div>
+                            <!-- 8 Phone -->
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input id="phone" type="text" class="form-control" placeholder="">
+                            </div>
+                            <!-- 9 Email address -->
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input id="email" type="email" class="form-control" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <input id="emailInformation " type="email" class="form-control"
+                                    placeholder="Additional information">
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+
+                    <div id="inforsSummary">
+                        <div class="infors-summary-wrap">
+
+                            <div class="row w-full">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="product">
+                                        <span class="title">Product</span>
+                                        <span class="name">Asgaard sofa X1</span>
+                                        <span class="subtotal">Subtotal</span>
+                                        <span class="total">Total</span>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="content">
+                                        <span class="title">Subtotal</span>
+                                        <span class="product-price">Rs. 250,000.00</span>
+                                        <span class="product-subtotal">Rs. 250,000.00</span>
+                                        <span class="last-price">Rs. 250,000.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+    </section>
+
+</body>
+
+</html>

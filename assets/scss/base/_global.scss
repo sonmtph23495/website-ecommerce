@@ -4,6 +4,14 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--mainBackgroudColor: #fff;
+	--discoveryBackgroudColor: #FFF3E3;
+	--colorTextNomal: #000;
+	--headbg: #F9F1E7;
+	--borderInput: #9F9F9F;
+}
+
 html {
 	font-size: 62.5%;
 	// font-family: 'Roboto', sans-serif;
@@ -12,6 +20,11 @@ html {
 
 body {
 	font-size: 1.6rem;
+}
+@media (max-width: 576px) {
+	body {
+		padding-bottom: 64px;
+	}
 }
 
 a {
@@ -54,4 +67,16 @@ h4,
 h5,
 h6 {
 	font-weight: 800;
+}
+
+.btn {
+	transition: all 0.3s ease;
+	user-select: none;
+	word-break: break-all;
+	white-space: nowrap;
+}
+
+.btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
 }
