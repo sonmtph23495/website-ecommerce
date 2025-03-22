@@ -1,5 +1,6 @@
 #checkOut {
-    margin-top: 6rem;
+    padding-top: 6rem;
+    background: var(--mainBackgroudColor);
     width: 100%;
 
     color: var(--colorTextNomal);
@@ -69,12 +70,22 @@
 }
 
 #billingDetails .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     gap: 1.375rem;
+
+    & input {
+        border-radius: 10px;
+        border: 1px solid var(--borderInput);
+        background: var(--mainBackgroudColor);
+    }
 }
 
-#inforsSummary {
+#inforsSummary,
+#paymentMethod {
     padding: 2.25rem 5.5rem;
-
 }
 
 .infors-summary-wrap {
@@ -86,6 +97,8 @@
 #inforsSummary .product {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
 
     .title {
         color: var(--colorTextNomal);
@@ -95,7 +108,7 @@
 
     .name {
         margin-top: 14px;
-        color: #9F9F9F;
+        color: var(--borderInput);
         font-size: 16px;
         font-weight: 400;
     }
@@ -121,8 +134,9 @@
     font-size: 24px;
     font-weight: 500;
     display: flex;
-    align-items: flex-end;
     flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
 
     .title {
         // border: 1px solid blue;
@@ -153,4 +167,122 @@
         font-weight: 700;
     }
 
+}
+
+#paymentMethod {
+    color: var(--colorTextNomal);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#paymentMethod .dot {
+    display: block;
+    background-color: var(--colorTextNomal);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+}
+
+#paymentMethod .title {
+    color: var(--colorTextNomal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#paymentMethod .desctription {
+    margin-top: 0.75rem;
+    color: var(--borderInput);
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#paymentMethod .payment-method-options {
+    margin-top: 1.5rem;
+
+    & label {
+        color: var(--borderInput);
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+#paymentMethod .note {
+    margin-top: 1.375rem;
+    color: var(--colorTextNomal);
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 300;
+
+    & a {
+        color: var(--colorTextNomal);
+        text-decoration: none;
+    }
+}
+
+#privacyPolicy {
+    color: var(--colorTextNomal);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#placeOrder {
+    margin: auto;
+    margin-top: 2.5rem;
+    max-width: 318px;
+    width: 100%;
+    min-height: 4rem;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid var(--colorTextNomal);
+}
+
+
+@media (max-width: 1200px) {
+
+    #inforsSummary,
+    #paymentMethod {
+        margin-top: 2rem;
+    }
+
+    #inforsSummary .content {
+        margin-top: 2rem;
+        align-items: flex-start;
+        text-align: right;
+    }
+}
+
+@media (max-width: 992px) {
+    #inforsSummary .content {
+        margin-top: 0;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+@media (max-width: 768px) {
+    #inforsSummary .content {
+        margin-top: 0;
+        align-items: flex-end;
+        text-align: right;
+    }
+}
+
+@media (max-width: 576px) {
+    #billingDetails {
+        padding: calc(2.25rem - 50%) calc(4.5rem - 50%);
+    }
+
+    #inforsSummary,
+    #paymentMethod {
+        margin-top: 2rem;
+        padding: calc(2.25rem - 50%) calc(5.5rem - 50%);
+    }
+
+    #inforsSummary .content {
+        margin-top: 2rem;
+        align-items: flex-start;
+        text-align: right;
+    }
 }
