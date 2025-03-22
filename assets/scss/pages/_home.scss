@@ -78,8 +78,7 @@
     color: var(--Primary, #B88E2F);
     font-size: 52px;
     font-weight: 700;
-    // line-height: 65px;
-    /* 125% */
+    // line-height: 65px;  /* 125% */
 }
 
 #homeBanner .description {
@@ -88,8 +87,7 @@
     color: var(--Font-Color, #333);
     font-size: 18px;
     font-weight: 500;
-    line-height: 24px;
-    /* 133.333% */
+    line-height: 24px;  /* 133.333% */
 }
 
 #buyNow {
@@ -112,73 +110,6 @@
 }
 
 
-#categories {
-    font-family: "Poppins";
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#categories .title {
-    margin-top: 3rem;
-    color: var(--Font-Color, #333);
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-#categories .description {
-    margin-top: 0.25rem;
-    color: var(--Font-Color1, #666);
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-}
-
-#categories .category-list {
-    margin-top: 3rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-#categories .category-wrap {
-    width: fit-content;
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-}
-
-#categories .category-item {
-    // border: 1px solid red;
-    padding: 0;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-
-    & img {
-        border-radius: 2rem;
-        padding: 0;
-        border: transparent;
-
-        &:active {
-            border: transparent;
-        }
-    }
-
-    .title {
-        margin-top: 1.25rem;
-        color: var(--Font-Color, #333);
-        text-align: center;
-        font-family: "Poppins";
-        font-size: 24px;
-        font-weight: 600;
-    }
-
-}
-
 @media (max-width: 1200px) {
     #homeBanner .quick-infor {
         margin-right: 12%;
@@ -193,12 +124,8 @@
 }
 
 @media (max-width: 768px) {
-    #homeBanner .quick-infor {
-
-    }
-
     .col-hire {
-        border: 1px solid red;
+        // border: 1px solid red;
         display: none;
     }
 
@@ -214,7 +141,6 @@
     }
 
     .col-hire {
-        border: 1px solid red;
         display: none;
     }
 
