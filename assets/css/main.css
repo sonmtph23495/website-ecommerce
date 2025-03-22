@@ -683,32 +683,38 @@ body {
   background-color: #f9f4f0;
   color: #333;
   line-height: 1.6;
+  margin: 0;
 }
 
 .services {
   background: #f4dbb9;
-  width: 1440px;
-  height: 270px;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 75px;
-  padding-left: 180px;
+  padding: 75px 20px;
+  text-align: center;
 }
 
-.services .features__grid {
+@media (max-width: 768px) {
+  .services {
+    padding: 50px 15px;
+  }
+}
+
+.features__grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 2rem;
+  padding: 0 20px;
 }
 
 @media (max-width: 768px) {
-  .services .features__grid {
+  .features__grid {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -719,7 +725,7 @@ body {
   }
 }
 
-.services .feature {
+.feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,30 +737,30 @@ body {
 }
 
 @media (max-width: 992px) {
-  .services .feature {
+  .feature {
     width: calc(50% - 1rem);
   }
 }
 
 @media (max-width: 768px) {
-  .services .feature {
+  .feature {
     width: 100%;
     max-width: 400px;
   }
 }
 
-.services .feature__icon {
-  font-size: 7rem;
+.feature__icon {
+  font-size: 5rem;
   color: #333;
-  min-width: 50px;
+  min-width: 40px;
   text-align: center;
 }
 
-.services .feature__icon i {
+.feature__icon i {
   display: inline-block;
 }
 
-.services .feature__content {
+.feature__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -762,15 +768,16 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: left;
 }
 
-.services .feature__title {
+.feature__title {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
-.services .feature__description {
+.feature__description {
   font-size: 1rem;
   color: #888;
 }
