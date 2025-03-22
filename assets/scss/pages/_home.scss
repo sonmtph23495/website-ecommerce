@@ -34,3 +34,131 @@
 // 		margin-bottom: 20px;
 // 	}
 // }
+
+#homePage {
+    background-color: var(--mainBackgroudColor);
+}
+
+#homeBanner {
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    background-image: url(../images/home-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    padding: 0 1%;
+}
+
+.quick-infor-col {
+    display: flex;
+    align-items: center;
+}
+
+#homeBanner .quick-infor {
+    border-radius: 10px;
+    background: var(--discoveryBackgroudColor);
+    width: 100%;
+    max-width: 500px;
+    padding: 4rem 2.75rem 2.5rem 2.75rem;
+    z-index: 2;
+    // margin-right: 24%;
+}
+
+#homeBanner .status {
+    color: var(--Font-Color, #333);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+#homeBanner .title {
+    margin-top: 0.5rem;
+    display: block;
+    color: var(--Primary, #B88E2F);
+    font-size: 52px;
+    font-weight: 700;
+    // line-height: 65px;  /* 125% */
+}
+
+#homeBanner .description {
+    margin-top: 1.25rem;
+    display: block;
+    color: var(--Font-Color, #333);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;  /* 133.333% */
+}
+
+#buyNow {
+    margin-top: 3.2rem;
+    background: var(--Primary, #B88E2F);
+    display: inline-flex;
+    padding: 25px 72px;
+    align-items: flex-start;
+    gap: 10px;
+
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#nav-mobile {
+    position: absolute;
+    border: 1px so;
+}
+
+
+@media (max-width: 1200px) {
+    #homeBanner .quick-infor {
+        margin-right: 12%;
+    }
+}
+
+@media (max-width: 992px) {
+    #homeBanner .quick-infor {
+        max-width: 500%;
+        margin: 0 1rem 0 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-hire {
+        // border: 1px solid red;
+        display: none;
+    }
+
+    #buyNow {
+        padding: 25px 72px;
+        font-size: calc(16px - 4%);
+    }
+}
+
+@media (max-width: 576px) {
+    #homeBanner .quick-infor {
+        margin: 0 1rem 0 1.5rem;
+    }
+
+    .col-hire {
+        display: none;
+    }
+
+    #homeBanner .status {
+        font-size: calc(16px - 50%);
+    }
+
+    #homeBanner .title {
+        font-size: calc(52px - 50%);
+    }
+
+    #homeBanner .description {
+        font-size: calc(18px - 50%);
+    }
+
+    #buyNow {
+        padding: calc(25px - 4%) calc(72px - 12%);
+        margin-top: calc(3.25rem - 4%);
+        font-size: calc(16px - 50%);
+    }
+}
