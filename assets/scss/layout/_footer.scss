@@ -1,18 +1,169 @@
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 20px 0;
-	text-align: center;
-	margin-top: 20px;
-	position: relative;
-	bottom: 0;
-	width: 100%;
-	z-index: 10;
-	a {
-		color: #fff;
-		text-decoration: none;
-		&:hover {
-			text-decoration: underline;
-		}
-	}
+// Biến để tái sử dụng
+$primary-color: #333;
+$secondary-color: #666;
+$border-color: #e0e0e0;
+$max-width: 1200px;
+$font-family:Poppins;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Reset mặc định
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins;
+}
+
+// Footer
+.footer {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 1px solid $border-color;
+
+    // Container cho Footer
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: $max-width;
+        margin: 0 auto;
+        flex-wrap: wrap;
+
+        // Cột trong Footer
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin-bottom: 20px;
+
+            // Logo
+            .footer-logo {
+                color: #000;
+                font-family: Poppins;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            // Địa chỉ
+            .footer-address {
+                color: $secondary-color;
+                font-size: 14px;
+                line-height: 1.5;
+                margin-top: 30px;
+            }
+
+            // Tiêu đề cột (Links, Help, Newsletter)
+            .footer-heading {
+                color: #9F9F9F;
+
+                font-family: Poppins;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;;
+                margin-bottom: 15px;
+            }
+
+            // Danh sách liên kết
+            .footer-links {
+                list-style: none;
+
+                li {
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: #000;
+
+                        font-family: Poppins;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                       line-height: normal;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+
+            // Form Newsletter
+            .footer-newsletter {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+
+                input {
+                    padding: 8px;
+                    border: none;
+                    border-bottom: 1px solid $primary-color; 
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    outline: none; 
+                    width: 170px;
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        max-width: 300px;
+                    }
+                }
+
+                button {
+                    background: none;
+                    border: none;
+                    border-bottom: 1px solid $primary-color;
+                    padding: 8px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    text-align: left;
+                    width: 100px;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        color: #555;
+                    }
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Copyright
+    .footer-copyright {
+        text-align: left;
+        padding-top: 20px;
+        border-top: 1px solid $border-color;
+        max-width: $max-width;
+        margin: 0 auto;
+        color: #000;
+
+        font-family: Poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+}
+
+// Responsive
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
