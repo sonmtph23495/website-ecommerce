@@ -40,33 +40,29 @@
 }
 
 #homeBanner {
-    position: relative;
-    z-index: 1;
+    min-height: calc(100vh - 100px);
+    width: 100%;
+    background-image: url(../images/home-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center 70%;
+    padding: 0 1%;
+}
+
+.quick-infor-col {
+    display: flex;
+    align-items: center;
 }
 
 #homeBanner .quick-infor {
     border-radius: 10px;
     background: var(--discoveryBackgroudColor);
-    max-width: 643px;
-    width: 50%;
-    padding: 3.75rem 2.5rem 2.25rem 2.5rem;
-    position: absolute;
+    width: 100%;
+    max-width: 500px;
+    padding: 4rem 2.75rem 2.5rem 2.75rem;
     z-index: 2;
-    top: 50%;
-    right: 47%;
-    transform: translate(calc(100% - 3.75rem), -50%);
-}
-
-#homeBanner {
-    font-family: "Poppins";
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-    & img {
-        position: relative;
-        z-index: 1;
-    }
+    // margin-right: 24%;
 }
 
 #homeBanner .status {
@@ -77,8 +73,8 @@
 }
 
 #homeBanner .title {
+    margin-top: 0.5rem;
     display: block;
-    margin-top: 0.25rem;
     color: var(--Primary, #B88E2F);
     font-size: 52px;
     font-weight: 700;
@@ -87,8 +83,8 @@
 }
 
 #homeBanner .description {
+    margin-top: 1.25rem;
     display: block;
-    margin-top: 1rem;
     color: var(--Font-Color, #333);
     font-size: 18px;
     font-weight: 500;
@@ -97,7 +93,7 @@
 }
 
 #buyNow {
-    margin-top: 3rem;
+    margin-top: 3.2rem;
     background: var(--Primary, #B88E2F);
     display: inline-flex;
     padding: 25px 72px;
@@ -183,32 +179,29 @@
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     #homeBanner .quick-infor {
-        max-width: 100%;
-        width: 80%;
-        padding: 1.75rem 2.5rem 2.25rem 2.5rem;
-        position: absolute;
-        z-index: 2;
-        top: 6%;
-        right: 10%;
-        -webkit-transform: translate(0);
-        transform: translate(0);
+        margin-right: 12%;
     }
 }
 
+@media (max-width: 992px) {
+    #homeBanner .quick-infor {
+        max-width: 500%;
+        margin: 0 1rem 0 1.5rem;
+    }
+}
 
 @media (max-width: 768px) {
     #homeBanner .quick-infor {
-        width: 80%;
-        padding: 3.75rem 2.5rem 2.25rem 2.5rem;
-        position: absolute;
-        z-index: 2;
-        top: 9%;
-        right: 15%;
-        -webkit-transform: translate(0);
-        transform: translate(0);
+
     }
+
+    .col-hire {
+        border: 1px solid red;
+        display: none;
+    }
+
     #buyNow {
         padding: 25px 72px;
         font-size: calc(16px - 4%);
@@ -217,30 +210,29 @@
 
 @media (max-width: 576px) {
     #homeBanner .quick-infor {
-        width: 100%;
-        background: var(--discoveryBackgroudColor);
-        max-width: 643px;
-        padding: 3.75rem 2.5rem 2.25rem 2.5rem;
-        position: static !important;
-        z-index: 2;
-        -webkit-transform: translate(0);
-        transform: translate(0);
+        margin: 0 1rem 0 1.5rem;
+    }
+
+    .col-hire {
+        border: 1px solid red;
+        display: none;
     }
 
     #homeBanner .status {
-        font-size: calc(16px - 4%);
+        font-size: calc(16px - 50%);
     }
 
     #homeBanner .title {
-        font-size: calc(52px - 4%);
+        font-size: calc(52px - 50%);
     }
 
     #homeBanner .description {
-        font-size: calc(18px - 4%);
+        font-size: calc(18px - 50%);
     }
+
     #buyNow {
-        padding: 25px 72px;
-        padding: calc( 25px - 2% ) calc( 72px - 2% );
-        font-size: calc(16px - 8%);
+        padding: calc(25px - 4%) calc(72px - 12%);
+        margin-top: calc(3.25rem - 4%);
+        font-size: calc(16px - 50%);
     }
 }

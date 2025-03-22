@@ -7,6 +7,9 @@
 :root {
 	--mainBackgroudColor: #fff;
 	--discoveryBackgroudColor: #FFF3E3;
+	--colorTextNomal: #000;
+	--headbg: #F9F1E7;
+	--borderInput: #9F9F9F;
 }
 
 html {
@@ -17,7 +20,11 @@ html {
 
 body {
 	font-size: 1.6rem;
-	padding-bottom: 64px;
+}
+@media (max-width: 576px) {
+	body {
+		padding-bottom: 64px;
+	}
 }
 
 a {
