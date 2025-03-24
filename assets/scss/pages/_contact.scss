@@ -4,7 +4,7 @@ $text-color: #333;
 $light-gray: #f5f5f5;
 $border-color: #e0e0e0;
 $white: #fff;
-$font-family: 'Arial', sans-serif;
+$font-family: 'Poppins', sans-serif;
 
 // Mixins
 @mixin flex-center {
@@ -24,16 +24,10 @@ $font-family: 'Arial', sans-serif;
   box-sizing: border-box;
 }
 
-body {
-  font-family: $font-family;
-  color: $text-color;
-  line-height: 1.6;
-  background-color: $white;
-}
 
 // Container
 .contact {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 40px 20px;
 
@@ -44,16 +38,26 @@ body {
   margin-bottom: 60px;
   
   h1 {
-    font-size: 2.5rem;
     margin-bottom: 15px;
-    font-weight: 600;
+    color: #000;
+font-family: Poppins;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
   }
   
   p {
-    max-width: 800px;
+    max-width: 644px;
     margin: 0 auto;
-    color: #666;
-    font-size: 1rem;
+    color: #9F9F9F;
+
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
   }
 }
 
@@ -91,14 +95,22 @@ body {
     
     .details {
       h3 {
-        font-size: 1.2rem;
         margin-bottom: 5px;
-        font-weight: 600;
+        color: #000;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
       }
       
       p {
-        color: #666;
-        font-size: 0.95rem;
+        color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
         margin-bottom: 3px;
       }
     }
@@ -116,16 +128,25 @@ body {
     
     label {
       margin-bottom: 8px;
+      color: #000;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
       font-weight: 500;
-      font-size: 1rem;
+      line-height: normal;
     }
     
     input, textarea {
       padding: 15px;
       border: 1px solid $border-color;
       border-radius: 5px;
-      font-size: 1rem;
-      font-family: $font-family;
+      color: #9F9F9F;
+
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
       
       &:focus {
         outline: none;
@@ -145,11 +166,15 @@ body {
   
   .submit-btn {
     background-color: $primary-color;
-    color: $white;
+   
     border: none;
     padding: 15px;
-    font-size: 1rem;
-    font-weight: 500;
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;

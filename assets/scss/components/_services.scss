@@ -8,19 +8,13 @@ $breakpoint-sm: 480px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: $color-background;
-  color: $color-text-primary;
-  line-height: 1.6;
-  margin: 0;
-}
+
 
 // Container
 .services {
-  max-width: 1440px;
+  width: 100%;
   background: #f4dbb9;
-  max-width: $container-max-width;
+  
   margin: 0 auto;
   padding: 75px 20px;
   text-align: center;
@@ -28,7 +22,7 @@ body {
   @media (max-width: $breakpoint-md) {
     padding: 50px 15px;
   }
-}
+
 
 // Features Section
 .features {
@@ -90,4 +84,5 @@ body {
     font-size: $spacing-base;
     color: $color-text-secondary;
   }
+}
 }
