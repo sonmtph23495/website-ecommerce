@@ -1288,7 +1288,7 @@ body {
   .services .feature {
     width: 100%;
     max-width: 400px;
-    margin-left: 90px;
+    margin-left: 30px;
   }
 }
 
@@ -1296,6 +1296,7 @@ body {
   font-size: 5rem;
   color: #333;
   min-width: 40px;
+  margin-left: 70px;
   text-align: center;
 }
 
