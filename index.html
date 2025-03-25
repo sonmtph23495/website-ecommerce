@@ -1,106 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEFARM - 7-1 Pattern</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>CODEFARM - 7-1 Pattern</title>
-	<!-- font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet" />
+    <!-- Font Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Font Montserrat -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-		rel="stylesheet">
+    <!-- icons -->
 
-	<!-- icons -->
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
-	<!-- bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
 
-	<!-- css -->
-	<link rel="stylesheet" href="./assets/css/main.css" />
-</head>
+  <body>
+    <header>
+      <div id="headerWebComponent">
+        <a
+          href="/"
+          id="logoComponent"
+          class="btn flex w-fit justify-center items-center"
+        >
+          <img src="assets/images/logo.png" alt="Logo" />
+          <span>Furniro</span>
+        </a>
+        <nav id="navigationComponent">
+          <a href="/" class="btn capitalize">home</a>
+          <a href="/shop.html" class="btn capitalize">shop</a>
+          <a href="/about.html" class="btn capitalize">about</a>
+          <a href="/contact.html" class="btn capitalize">contact</a>
+        </nav>
+        <div class="header-nav-actions">
+          <a href="">
+            <img src="assets/icons/mdi_account-alert-outline.svg" class="btn" />
+          </a>
+          <span>
+            <img src="assets/icons/akar-icons_search.svg" class="btn" />
+          </span>
+          <a href="">
+            <img src="assets/icons/akar-icons_heart.svg" class="btn" />
+          </a>
+          <a href="/cart.html">
+            <img
+              src="assets/icons/ant-design_shopping-cart-outlined.svg"
+              alt="cart"
+              class="btn"
+            />
+          </a>
+        </div>
+      </div>
 
-<body>
+      <div id="headerMobileComponent">
+        <a
+          href="/"
+          id="logoComponent"
+          class="btn flex w-fit justify-center items-center"
+        >
+          <img src="assets/images/logo.png" alt="Logo" />
+          <span>Furniro</span>
+        </a>
+        <button class="btn d-md-none" id="menuToggle">
+          <img src="assets/icons/hamburger-menu.png" width="18" alt="Menu" />
 
-	<header>
-		<div id="headerWebComponent">
-			<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
-				<img src="assets/images/logo.png" alt="Logo">
-				<span>Furniro</span>
-			</a>
-			<nav id="navigationComponent">
-				<a href="/" class="btn capitalize">home</a>
-				<a href="/shop.html" class="btn capitalize">shop</a>
-				<a href="/about.html" class="btn capitalize">about</a>
-				<a href="/contact.html" class="btn capitalize">contact</a>
-			</nav>
-			<div class="header-nav-actions">
-				<a href=""> <img src="assets/icons/mdi_account-alert-outline.svg" class="btn"> </a>
-				<span> <img src="assets/icons/akar-icons_search.svg" class="btn"> </span>
-				<a href=""> <img src="assets/icons/akar-icons_heart.svg" class="btn"> </a>
-				<a href="/cart.html"> <img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart"
-						class="btn"> </a>
-			</div>
-		</div>
+          <nav id="mobileNavigationComponent">
+            <div class="mobile-nav-content">
+              <a href="/" class="btn capitalize">home</a>
+              <a href="/shop.html" class="btn capitalize">shop</a>
+              <a href="/about.html" class="btn capitalize">about</a>
+              <a href="/contact.html" class="btn capitalize">contact</a>
+            </div>
+          </nav>
+        </button>
+        <div class="header-nav-actions">
+          <a href="">
+            <img src="assets/icons/mdi_account-alert-outline.svg" class="btn" />
+          </a>
+          <span>
+            <img src="assets/icons/akar-icons_search.svg" class="btn" />
+          </span>
+          <a href="">
+            <img src="assets/icons/akar-icons_heart.svg" class="btn" />
+          </a>
+          <a href="/cart.html">
+            <img
+              src="assets/icons/ant-design_shopping-cart-outlined.svg"
+              alt="cart"
+              class="btn"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
 
-		<div id="headerMobileComponent">
-			<a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
-				<img src="assets/images/logo.png" alt="Logo">
-				<span>Furniro</span>
-			</a>
-			<button class="btn d-md-none" id="menuToggle">
-				<img src="assets/icons/hamburger-menu.png" width="18" alt="Menu">
+    <section id="homePage">
+      <div id="homeBanner" class="row p-0">
+        <div class="col-xl-6 col-lg-6 col-md-4 p-0 col-hire"></div>
 
-				<nav id="mobileNavigationComponent">
-					<div class="mobile-nav-content">
-						<a href="/" class="btn capitalize">home</a>
-						<a href="/shop.html" class="btn capitalize">shop</a>
-						<a href="/about.html" class="btn capitalize">about</a>
-						<a href="/contact.html" class="btn capitalize">contact</a>
-					</div>
-				</nav>
-			</button>
-			<div class="header-nav-actions">
-				<a href=""> <img src="assets/icons/mdi_account-alert-outline.svg" class="btn"> </a>
-				<span> <img src="assets/icons/akar-icons_search.svg" class="btn"> </span>
-				<a href=""> <img src="assets/icons/akar-icons_heart.svg" class="btn"> </a>
-				<a href="/cart.html"> <img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart"
-						class="btn"> </a>
-			</div>
+        <div
+          class="d-ms-m-4 col-ms-12 col-md-8 col-xl-6 col-lg-6 d-sm-w-100 p-0 d-flex justify-content-start align-items-center"
+        >
+          <div class="quick-infor d-lg-mr-3 d-md-mr-2 d-sm-mx-2">
+            <span class="status">New Arrival</span>
+            <span class="title">Discover Our New Collection</span>
+            <div class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis.
+            </div>
+            <butoon id="buyNow" class="btn">BUY Now</butoon>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="category">
+      <div class="header">
+        <h1>Browse The Range</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="grid">
+        <div class="category">
+          <img src="assets/img/image100.png" alt="Dining" />
+          <p>Dining</p>
+        </div>
+        <div class="category">
+          <img src="assets/img/image101.png" alt="Living" />
+          <p>Living</p>
+        </div>
+        <div class="category">
+          <img src="assets/img/image106.png" alt="Bedroom" />
+          <p>Bedroom</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-product">
+      <h1>Our Products</h1>
 
-		</div>
-	</header>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-tag tag-discount">-30%</div>
+          <div class="product-image">
+            <img src="./assets/img/sp1.png" alt="Syltherine" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Syltherine</h3>
+            <p class="product-description">Stylish cafe chair</p>
+            <div class="product-price">
+              <span class="current-price">Rp 2.500.000</span>
+              <span class="original-price">Rp 3.500.000</span>
+            </div>
+          </div>
 
-	<section id="homePage">
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
 
-		<div id="homeBanner" class="row p-0">
-			<div class="col-xl-6 col-lg-6 col-md-4 p-0 col-hire"></div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/img/sp2.png" alt="Leviosa" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Leviosa</h3>
+            <p class="product-description">Stylish cafe chair</p>
+            <div class="product-price">
+              <span class="current-price">Rp 2.500.000</span>
+            </div>
+          </div>
 
-			<div
-				class="d-ms-m-4 col-ms-12 col-md-8 col-xl-6 col-lg-6 d-sm-w-100 p-0 d-flex justify-content-start align-items-center">
-				<div class="quick-infor d-lg-mr-3 d-md-mr-2 d-sm-mx-2">
-					<span class="status">New Arrival</span>
-					<span class="title">Discover Our New Collection</span>
-					<div class="description">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-						ullamcorper
-						mattis.
-					</div>
-					<butoon id="buyNow" class="btn">BUY Now</butoon>
-				</div>
-			</div>
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-tag tag-discount">-50%</div>
+          <div class="product-image">
+            <img src="./assets/img/sp3.png" alt="Lolito" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Lolito</h3>
+            <p class="product-description">Luxury big sofa</p>
+            <div class="product-price">
+              <span class="current-price">Rp 7.000.000</span>
+              <span class="original-price">Rp 14.000.000</span>
+            </div>
+          </div>
 
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
 
-		</div>
-	</section>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-tag tag-new">New</div>
+          <div class="product-image">
+            <img src="./assets/img/sp4.png" alt="Respira" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Respira</h3>
+            <p class="product-description">Outdoor bar table and stool</p>
+            <div class="product-price">
+              <span class="current-price">Rp 500.000</span>
+            </div>
+          </div>
 
-</body>
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
 
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-image">
+            <img src="./assets/img/sp5.png" alt="Grifo" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Grifo</h3>
+            <p class="product-description">Night lamp</p>
+            <div class="product-price">
+              <span class="current-price">Rp 1.500.000</span>
+            </div>
+          </div>
+
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-tag tag-new">New</div>
+          <div class="product-image">
+            <img src="./assets/img/image 6.png" alt="Muggo" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Muggo</h3>
+            <p class="product-description">Small mug</p>
+            <div class="product-price">
+              <span class="current-price">Rp 150.000</span>
+            </div>
+          </div>
+
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <div class="product-tag tag-discount">-50%</div>
+          <div class="product-image">
+            <img src="./assets/img/sp7.png" alt="Pingky" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Pingky</h3>
+            <p class="product-description">Cute bed set</p>
+            <div class="product-price">
+              <span class="current-price">Rp 7.000.000</span>
+              <span class="original-price">Rp 14.000.000</span>
+            </div>
+          </div>
+
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <div class="product-tag tag-new">New</div>
+          <div class="product-image">
+            <img src="./assets/img/sp8.png" alt="Potty" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Potty</h3>
+            <p class="product-description">Minimalist flower pot</p>
+            <div class="product-price">
+              <span class="current-price">Rp 500.000</span>
+            </div>
+          </div>
+
+          <!-- Hover Overlay -->
+          <div class="hover-overlay">
+            <button class="add-to-cart">Add to cart</button>
+            <div class="action-buttons">
+              <button class="action-button">
+                <i class="fas fa-share-alt"></i> Share
+              </button>
+              <button class="action-button">
+                <i class="fas fa-exchange-alt"></i> Compare
+              </button>
+              <button class="action-button">
+                <i class="far fa-heart"></i> Like
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="show-more"><a href="./shop.html">Show More</a></button>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Cột 1: Logo và Địa chỉ -->
+        <div class="footer-column">
+          <h2 class="footer-logo">Funiro.</h2>
+          <p class="footer-address">
+            400 University Drive Suite 200 Coral <br />
+            Gables,<br />
+            FL 33134 USA
+          </p>
+        </div>
+
+        <!-- Cột 2: Links -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 3: Help -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Help</h3>
+          <ul class="footer-links">
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </div>
+
+        <!-- Cột 4: Newsletter -->
+        <div class="footer-column">
+          <h3 class="footer-heading">Newsletter</h3>
+          <form class="footer-newsletter">
+            <input
+              type="email"
+              placeholder="Enter Your Email Address"
+              required
+            />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <p>2023 Funiro. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
 </html>
