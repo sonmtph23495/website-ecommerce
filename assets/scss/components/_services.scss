@@ -1,0 +1,89 @@
+// Variables
+$color-background: #f9f4f0;
+$color-text-primary: #333;
+$color-text-secondary: #888;
+$spacing-base: 1rem;
+$container-max-width: 1440px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+
+
+
+// Container
+.services {
+  width: 100%;
+  background: #f4dbb9;
+  
+  margin: 0 auto;
+  padding: 75px 20px;
+  text-align: center;
+
+  @media (max-width: $breakpoint-md) {
+    padding: 50px 15px;
+  }
+
+
+// Features Section
+.features {
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacing-base * 2;
+    padding: 0 20px;
+
+    @media (max-width: $breakpoint-md) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+// Feature Item
+.feature {
+  display: flex;
+  align-items: center;
+  gap: $spacing-base;
+  width: calc(25% - #{$spacing-base * 1.5});
+
+  @media (max-width: $breakpoint-lg) {
+    width: calc(50% - #{$spacing-base});
+  }
+
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 30px;
+  }
+
+  &__icon {
+    font-size: $spacing-base * 5;
+    color: $color-text-primary;
+    min-width: 40px;
+    margin-left: 70px;
+    text-align: center;
+
+    i {
+      display: inline-block;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  &__title {
+    font-size: $spacing-base * 1.25;
+    font-weight: 600;
+    margin-bottom: $spacing-base * 0.25;
+  }
+
+  &__description {
+    font-size: $spacing-base;
+    color: $color-text-secondary;
+  }
+}
+}
