@@ -48,7 +48,6 @@
         border-radius: 10px;
         border: 1px solid #000000;
         background: #FFF;
-        font-size: 1.5rem !important;
 
         display: block;
         width: 100%;
@@ -76,7 +75,7 @@
     align-items: flex-start;
     gap: 1.375rem;
 
-    & input {
+    & input, #countryRegion {
         border-radius: 10px;
         border: 1px solid var(--borderInput);
         background: var(--mainBackgroudColor);
@@ -99,6 +98,10 @@
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
+
+    color: var(--colorTextNomal);
+    font-size: 24px;
+    font-weight: 500;
 
     .title {
         color: var(--colorTextNomal);
@@ -137,6 +140,8 @@
     flex-direction: column;
     align-items: flex-end;
     text-align: right;
+    margin: 0;
+    padding: 0 !important;
 
     .title {
         // border: 1px solid blue;
@@ -236,6 +241,10 @@
     flex-shrink: 0;
     border-radius: 15px;
     border: 1px solid var(--colorTextNomal);
+
+    color: var(--colorTextNomal);
+    font-size: 20px;
+    font-weight: 400;
 }
 
 
@@ -270,19 +279,23 @@
 }
 
 @media (max-width: 576px) {
+
     #billingDetails {
-        padding: calc(2.25rem - 50%) calc(4.5rem - 50%);
+        padding: 2.25rem 4.5rem;
+        padding: calc(2.25rem / 4) calc(4.5rem / 4);
     }
 
     #inforsSummary,
     #paymentMethod {
         margin-top: 2rem;
-        padding: calc(2.25rem - 50%) calc(5.5rem - 50%);
+        padding: calc(2.25rem / 4) calc(5.5rem / 4);
     }
 
     #inforsSummary .content {
         margin-top: 2rem;
         align-items: flex-start;
         text-align: right;
+        font-size: calc(2rem);
+
     }
 }
