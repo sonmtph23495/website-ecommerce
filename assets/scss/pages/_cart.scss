@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 #cartPage {
     display: flex;
     flex-direction: column;
@@ -5,31 +7,6 @@
     font-family: "Poppins";
     font-style: normal;
     line-height: normal;
-}
-
-#breadcrumb {
-    height: 100%;
-    max-height: 316px;
-    overflow: hidden;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
-
-    .logo {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        filter: blur(3px);
-    }
-
-    .step {
-      /* border: 1px solid red; */
-      width: 18px;
-      height: 18px;
-      -ms-flex-negative: 0;
-      flex-shrink: 0;
-      -webkit-transform: translateY(2px);
-      transform: translateY(0.5rem);
-    }
 }
 
 #breadcrumb {
@@ -44,8 +21,31 @@
     background-position: center;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
-;
+    display: flex;
+
+    max-height: 316px;
+    overflow: hidden;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
+
+
+    .logo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(3px);
+    }
+
+    .step {
+        /* border: 1px solid red; */
+        width: 18px;
+        height: 18px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-transform: translateY(2px);
+        transform: translateY(3px);
+    }
+
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -53,6 +53,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     text-align: center;
+
     &::before {
         content: "";
         position: absolute;
@@ -62,6 +63,7 @@
         height: 100%;
         background-color: rgba(255, 255, 255, 0.7);
     }
+
     .infors {
         position: absolute;
         top: 50%;
@@ -95,12 +97,14 @@
             font-size: 16px;
             font-weight: 500;
             text-transform: capitalize;
+            &:last-child {
+                // border: 1px solid red;
+                color: var(--colorTextNomal);
+                font-weight: 400;
+            }
         }
 
-        &:last-child {
-            color: var(--colorTextNomal);
-            font-weight: 300;
-        }
+
     }
 }
 
@@ -273,6 +277,7 @@
     text-align: right;
     margin: 0;
 }
+
 #cart-summary #lastPrice {
     color: var(--Primary, #B88E2F);
     font-size: 20px;

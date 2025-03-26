@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODEFARM - 7-1 Pattern</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Montserrat -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+
+<body>
+    <header>
+        <div id="headerWebComponent">
+            <a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
+                <img src="assets/images/logo.png" alt="Logo" />
+                <span>Furniro</span>
+            </a>
+            <nav id="navigationComponent">
+                <a href="/" class="btn capitalize">home</a>
+                <a href="/shop.html" class="btn capitalize">shop</a>
+                <a href="/about.html" class="btn capitalize">about</a>
+                <a href="/contact.html" class="btn capitalize">contact</a>
+            </nav>
+            <div class="header-nav-actions">
+                <a href="">
+                    <img src="assets/icons/mdi_account-alert-outline.svg" class="btn" />
+                </a>
+                <span>
+                    <img src="assets/icons/akar-icons_search.svg" class="btn" />
+                </span>
+                <a href="">
+                    <img src="assets/icons/akar-icons_heart.svg" class="btn" />
+                </a>
+                <a href="/cart.html">
+                    <img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn" />
+                </a>
+            </div>
+        </div>
+
+        <div id="headerMobileComponent">
+            <a href="/" id="logoComponent" class="btn flex w-fit justify-center items-center">
+                <img src="assets/images/logo.png" alt="Logo" />
+                <span>Furniro</span>
+            </a>
+            <button class="btn d-md-none" id="menuToggle">
+                <img src="assets/icons/hamburger-menu.png" width="18" alt="Menu" />
+
+                <nav id="mobileNavigationComponent">
+                    <div class="mobile-nav-content">
+                        <a href="/" class="btn capitalize">home</a>
+                        <a href="/shop.html" class="btn capitalize">shop</a>
+                        <a href="/about.html" class="btn capitalize">about</a>
+                        <a href="/contact.html" class="btn capitalize">contact</a>
+                    </div>
+                </nav>
+            </button>
+            <div class="header-nav-actions">
+                <a href="">
+                    <img src="assets/icons/mdi_account-alert-outline.svg" class="btn" />
+                </a>
+                <span>
+                    <img src="assets/icons/akar-icons_search.svg" class="btn" />
+                </span>
+                <a href="">
+                    <img src="assets/icons/akar-icons_heart.svg" class="btn" />
+                </a>
+                <a href="/cart.html">
+                    <img src="assets/icons/ant-design_shopping-cart-outlined.svg" alt="cart" class="btn" />
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="breadcrumb">
+        <div class="infors">
+            <img class="logo" src="assets/images/logo.png" alt="Logo">
+            <div class="title">Product Comparison</div>
+            <div class="detail">
+                <span>Home</span>
+                <img class="step" src="assets/icons/chevron-right.svg" alt="step">
+                <span>Product Comparison</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="comparison-page">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-xl-3 col-md-6 col-12">Cột 1</div>
+                <div class="col-xl-3 col-md-6 col-12">Cột 2</div>
+                <div class="col-xl-3 col-md-6 col-12">Cột 3</div>
+                <div class="col-xl-3 col-md-6 col-12">Cột 4</div>
+            </div> -->
+
+            <div class="comparison-page__head">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="redirect d-flex flex-column ">
+                            <span class="title">Go to Product page for more Products</span>
+                            <a href="./shop.html">View More</a>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="comparison-item-wrap">
+                            <div class="comparison-item">
+                                <div class="product-img">
+                                    <img src="assets/images/cart-item.png" alt="cart">
+                                </div>
+                                <span class="title">Outdoor Sofa Set</span>
+                                <span class="price">Rs. 224,000.00</span>
+                                <div class="value">
+                                    <span class="ratio">4.2</span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div class="line"></div>
+                                    <span class="review-count">145 Review</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="comparison-item-wrap">
+                            <div class="comparison-item">
+                                <div class="product-img">
+                                    <img src="assets/images/cart-item.png" alt="cart">
+                                </div>
+                                <span class="title">Outdoor Sofa Set</span>
+                                <span class="price">Rs. 224,000.00</span>
+                                <div class="value">
+                                    <span class="ratio">4.2</span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <div class="line"></div>
+                                    <span class="review-count">145 Review</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="addition-comparison-product">
+                            <div class="title">Add A Product</div>
+                            <div class="selected">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <img src="assets/icons/fa-chevron-down.svg" alt="cart" class="fa-chevron-down">
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comparison-page__content">
+                <div class="product-comparison-infors">
+
+                    <div class="rows">
+                        <!-- 1 -->
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="product-comparison-infor-item">
+                                    <div class="title">General </div>
+                                    <div class="infor-list">
+                                        <div class="infor-item">Sales Package</div>
+                                        <div class="infor-item">Model Number</div>
+                                        <div class="infor-item">Secondary Material</div>
+                                        <div class="infor-item">Configuration</div>
+                                        <div class="infor-item">Upholstery Material</div>
+                                        <div class="infor-item">Upholstery Color</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="product-comparison-infor-item">
+                                    <span class="title  visible-hidden">General</span>
+                                    <div class="infor-list">
+                                        <div class="infor-item">Sales Package</div>
+                                        <div class="infor-item">Model Number</div>
+                                        <div class="infor-item">Secondary Material</div>
+                                        <div class="infor-item">Configuration</div>
+                                        <div class="infor-item">Upholstery Material</div>
+                                        <div class="infor-item">Upholstery Color</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6 col-12">
+                                <div class="product-comparison-infor-item">
+                                    <span class="title  visible-hidden">General</span>
+                                    <div class="infor-list">
+                                        <div class="infor-item">1 sectional sofa</div>
+                                        <div class="infor-item">TFCBLIGRBL6SRHS</div>
+                                        <div class="infor-item">Solid Wood</div>
+                                        <div class="infor-item">L-shapeddiv></div>
+                                        <div class="infor-item">Fabric + Cotton</div>
+                                        <div class="infor-item">Bright Grey & Lion</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="visible-hidden"></div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="product-comparison-infor-item">
+                                <div class="title">Product </div>
+                                <div class="infor-list">
+                                    <div class="infor-item">Filling Material</div>
+                                    <div class="infor-item">Finish Type</div>
+                                    <div class="infor-item">Adjustable Headrest</div>
+                                    <div class="infor-item">Maximum Load Capacity</div>
+                                    <div class="infor-item">Origin of Manufacture</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="product-comparison-infor-item">
+                                <span class="title  visible-hidden">Product</span>
+                                <div class="infor-list">
+                                    <div class="infor-item">Foam</div>
+                                    <div class="infor-item">Bright Grey & Lion</div>
+                                    <div class="infor-item">No</div>
+                                    <div class="infor-item">280 KG</div>
+                                    <div class="infor-item">India</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="product-comparison-infor-item">
+                                <span class="title  visible-hidden">Product</span>
+                                <div class="infor-list">
+                                    <div class="infor-item">Matte</div>
+                                    <div class="infor-item">Bright Grey & Lion</div>
+                                    <div class="infor-item">yes</div>
+                                    <div class="infor-item">300 KG</div>
+                                    <div class="infor-item">India</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="visible-hidden"></div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="row">
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="product-comparison-infor-item">
+                                <div class="title">Product </div>
+                                <div class="infor-list">
+                                    <div class="infor-item">Width</div>
+                                    <div class="infor-item">Height</div>
+                                    <div class="infor-item">Depth</div>
+                                    <div class="infor-item">Weight</div>
+                                    <div class="infor-item">Seat Height</div>
+                                    <div class="infor-item">Leg Height</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="product-comparison-infor-item">
+                                <span class="title  visible-hidden">Product</span>
+                                <div class="infor-list">
+                                     <div class="infor-item">265.32 cm</div>
+                                     <div class="infor-item">76 cm</div>
+                                     <div class="infor-item">167.76 cm</div>
+                                     <div class="infor-item">45 KG</div>
+                                     <div class="infor-item">41.52 cm</div>
+                                     <div class="infor-item">5.46 cm</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="product-comparison-infor-item">
+                                <span class="title  visible-hidden">Product</span>
+                                <div class="infor-list">
+                                    <div class="infor-item">265.32 cm</div>
+                                    <div class="infor-item">76 cm</div>
+                                    <div class="infor-item">167.76 cm</div>
+                                    <div class="infor-item">65 KG</div>
+                                    <div class="infor-item">41.52 cm</div>
+                                    <div class="infor-item">5.46 cm</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-md-6 col-12">
+                            <div class="visible-hidden"></div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Cột 1: Logo và Địa chỉ -->
+            <div class="footer-column">
+                <h2 class="footer-logo">Funiro.</h2>
+                <p class="footer-address">
+                    400 University Drive Suite 200 Coral <br />
+                    Gables,<br />
+                    FL 33134 USA
+                </p>
+            </div>
+
+            <!-- Cột 2: Links -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 3: Help -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Help</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Payment Options</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policies</a></li>
+                </ul>
+            </div>
+
+            <!-- Cột 4: Newsletter -->
+            <div class="footer-column">
+                <h3 class="footer-heading">Newsletter</h3>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="Enter Your Email Address" required />
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+            <p>2023 Funiro. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
