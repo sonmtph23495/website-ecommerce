@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+#comparison-page {
+    margin-top: 5.25rem;
+    font-family: "Poppins";
+    font-style: normal;
+}
+
+.comparison-page__head {
+    .redirect {
+        .title {
+            color: var(--colorTextNomal);
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 126.5%;
+        }
+
+        a {
+            border-bottom: 1px solid #727272;
+            width: fit-content;
+            text-decoration: none;
+            color: #727272;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0.5rem 0.5rem 0.15rem 0;
+        }
+    }
+
+}
+
+
+.comparison-item-wrap {
+
+    width: 100%;
+    padding: 1rem;
+}
+
+.comparison-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1rem;
+
+
+    .product-img {
+        border-radius: 10px;
+        background: #F9F1E7;
+        width: 100%;
+
+        & img {
+            background: inherit;
+            max-width: 239px;
+            width: 100%;
+        }
+    }
+
+    .title {
+        margin-top: 1rem;
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 126.5%;
+    }
+
+    .price {
+        margin-top: 0.35rem;
+        color: #000;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .value {
+        margin-top: 0.25rem;
+        display: flex;
+        align-items: center;
+
+        .ratio {
+            width: fit-content;
+            color: var(--colorTextNomal);
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .stars {
+            margin-left: 0.5rem;
+            display: flex;
+            gap: 0.35rem;
+
+            .fa-star,
+            .fa-star-half-stroke {
+                color: rgba(255, 199, 0, 1);
+            }
+        }
+
+        .line {
+            background: #9F9F9F;
+            width: 1px;
+            height: 30px;
+            margin: 0 0.75rem;
+        }
+
+        .review-count {
+            color: #9F9F9F;
+            font-size: 13px;
+            font-weight: 400;
+        }
+    }
+}
+
+
+.addition-comparison-product {
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 126.5%;
+    }
+
+    .selected {
+        margin-top: 0.75rem;
+        border-radius: 6px;
+        min-width: 242px;
+        // min-height: 39px;
+        flex-shrink: 0;
+        position: relative;
+
+        .form-select {
+            border-radius: inherit;
+            background: var(--Primary, #B88E2F);
+            width: 100%;
+            height: 46px;
+
+            padding: 0.5rem 1rem;
+
+            color: var(--mainBackgroudColor);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 126.5%;
+            /* 17.71px */
+            /* 17.71px */
+        }
+
+        .fa-chevron-down {
+            stroke-width: 2px;
+            stroke: var(--mainBackgroudColor);
+            color: var(--mainBackgroudColor);
+            position: absolute;
+            right: 1rem;
+            transform: translateY(-50%);
+            top: 50%;
+        }
+
+    }
+
+}
+
+
+.comparison-page__content {
+    // border: 1px solid red;
+    padding: 1.5rem;
+}
+
+.product-comparison-infors {
+    .rows {
+        display: flex;
+        flex-direction: column;
+        gap: 4.625rem;
+    }
+    .title {
+        color: var(--colorTextNomal);
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 126.5%;
+    }
+    .visible-hidden {
+        visibility: hidden;
+    }
+    .infor-list {
+        margin-top: 1.75rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.125rem;
+    }
+
+    .infor-item {
+        color: var(--colorTextNomal);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 126.5%;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .comparison-page__head {
+        .redirect {
+            .title {
+                font-size: calc(28px /1.25);
+            }
+
+            a {
+                font-size: calc(20px /1.25);
+            }
+        }
+
+    }
+
+}

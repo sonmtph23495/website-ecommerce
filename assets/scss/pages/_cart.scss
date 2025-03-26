@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 #cartPage {
     display: flex;
     flex-direction: column;
@@ -8,23 +10,60 @@
 }
 
 #breadcrumb {
-    // border: 1px solid red;
-    height: 100%;
+    position: relative;
+
+    width: 100%;
+    height: 316px;
+    margin: 0 auto;
+    position: relative;
+    background-image: url(/assets/img/banner.png);
+    background-size: cover;
+    background-position: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
     max-height: 316px;
     overflow: hidden;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.7);
 
-    & img {
+
+    .logo {
         width: 100%;
         height: 100%;
         object-fit: cover;
         filter: blur(3px);
     }
 
+    .step {
+        /* border: 1px solid red; */
+        width: 18px;
+        height: 18px;
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        -webkit-transform: translateY(2px);
+        transform: translateY(3px);
+    }
 
-}
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
 
-#breadcrumb {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
     .infors {
         position: absolute;
         top: 50%;
@@ -58,12 +97,14 @@
             font-size: 16px;
             font-weight: 500;
             text-transform: capitalize;
+            &:last-child {
+                // border: 1px solid red;
+                color: var(--colorTextNomal);
+                font-weight: 400;
+            }
         }
 
-        &:last-child {
-            color: var(--colorTextNomal);
-            font-weight: 300;
-        }
+
     }
 }
 
@@ -71,7 +112,8 @@
 #cartPage {
     margin-top: 4.5rem;
     width: 100%;
-    & div {
+
+    &.row div {
         padding: 0;
     }
 
@@ -104,6 +146,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-right: 2rem;
 }
 
 .cart-table-head,
@@ -112,15 +155,19 @@
     display: grid;
     grid-template-columns: 1.75fr 1fr 0.25fr 1fr 0.25fr;
     text-align: center;
-    border-bottom: 1px solid gray;
+    padding: 0.5rem 0;
+}
+
+.cart-list-line {
+    border-bottom: 1px solid var(--border-color);
+    width: 100%;
 }
 
 .cart-table-head {
     width: 100%;
     min-height: 55px;
     background: var(--headbg);
-
-
+    background: #F9F1E7;
     gap: 0.5rem;
     align-items: center;
 
@@ -193,12 +240,12 @@
 }
 
 //
-.cart-summary {
+#cart-summary {
     background: var(--headbg);
+    background: #F9F1E7;
     border-radius: 0.25rem;
-    min-width: 393px;
+    width: 100%;
     padding: 4rem 5rem !important;
-    margin-left: 0.5rem;
 
     & .title {
         color: var(--colorTextNomal);
@@ -208,31 +255,36 @@
 }
 
 
-.cart-summary-infors {
+#cart-summary .cart-summary-infors {
+    margin-top: 3.75rem;
     display: grid;
     grid-template-columns: 30% 70%;
-    gap: 1rem 0.75rem;
+    gap: 2rem 1rem;
 }
 
-.cart-summary-infors .title {
+#cart-summary .cart-summary-infors .title {
     color: #000;
     font-size: 16px;
     font-weight: 500;
+    text-align: left;
 }
 
-.cart-summary-infors .content {
+#cart-summary .cart-summary-infors .content {
+    // border: 1px solid red;
     color: #9F9F9F;
     font-size: 16px;
     font-weight: 400;
+    text-align: right;
+    margin: 0;
 }
 
-#lastPrice {
+#cart-summary #lastPrice {
     color: var(--Primary, #B88E2F);
     font-size: 20px;
     font-weight: 500;
 }
 
-.cart-summary-actions {
+#cart-summary .cart-summary-actions {
     margin-top: 2.625rem;
     display: flex;
     justify-content: center;
@@ -254,7 +306,7 @@
 
 
 @media (max-width: 1200px) {
-    .cart-summary {
+    #cart-summary {
         text-align: center;
     }
 }
@@ -266,7 +318,7 @@
 }
 
 @media (max-width: 576px) {
-    .cart-summary {
+    #cart-summary {
         min-width: fit-content;
     }
 
